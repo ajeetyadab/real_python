@@ -1,4 +1,4 @@
-strings = "modam"
+strings = "madam"
 
 
 
