@@ -13,3 +13,9 @@ def is_palindrome(strings):
         print("its not a palindrome")
 
 is_palindrome("Modam")
+
+
+# capitalising a string
+
+new_string = "hello world how are you "
+print(new_string.capitalize())
