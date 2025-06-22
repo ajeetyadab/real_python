@@ -1,20 +1,24 @@
-charecter = "hello world"
-splillted_strig = list(charecter)
-
-my_dict = {}
-
-for i in charecter:
-    my_dict[i] = charecter.count(i)
+charecter = "hello worlds"
 
 
-count_item = {}
-count = 0
-for key,val in my_dict.items():
-    if val>count:
-        count = val
-        count_item = {key:val}
 
-print(count_item)
+def count_max_charecter(string):
+    my_dict = {}
+    count_item = {}
+    count = 0
+
+    for i in string:
+        my_dict[i] = charecter.count(i)
+
+
+
+    for key,val in my_dict.items():
+        if val>count:
+            count = val
+            count_item = {key:val}
+
+    return count_item
+
 
 
 # Bonus
@@ -26,7 +30,7 @@ iterator = iter(my_dict)
 key = next(iterator)
 
 my_dict.pop(key)
-print(my_dict)
+print(my_dict) 
     
 
     
