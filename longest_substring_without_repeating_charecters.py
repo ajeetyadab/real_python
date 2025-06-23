@@ -10,7 +10,7 @@ string = "hello world what a sunny day today"
 
 string = "longest substring  first split the string into substring "
 
-splitted_string = string.split(" ")
+splitted_string = string.split()
 print(splitted_string)
 
 count_dict = {}
@@ -28,8 +28,8 @@ for word in splitted_string:
             s = set()
             temp_list = []
             break
-    if temp_list != []  or temp_list != [","] or temp_list != [" "]:
-        l.append(temp_list)
+    if temp_list != []  and temp_list != [","] and temp_list != [" "]:
+        l.append("".join(temp_list))
         s = set()
         temp_list = []
 print(l)
