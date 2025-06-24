@@ -71,4 +71,6 @@ upperbound = positive_std + positive_mean*3
 print(lower_bound,upperbound)
 
 upper_breached = positive_df[positive_df["% Change"]>upperbound]
+lower_breached = negative_df[negative_df["% Change"]<lower_bound]
 print(upper_breached.count()/positive_df.count()*100)
+print(lower_breached)

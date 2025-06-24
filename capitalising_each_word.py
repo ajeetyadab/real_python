@@ -4,7 +4,7 @@ string = "hello world how are you"
 
     
 def capitalised_string(string):
-    capitalised_strig = " "
+    capitalised_strig = ""
 
     splitted_string = string.split(" ")
 
