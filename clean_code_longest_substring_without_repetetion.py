@@ -1,6 +1,6 @@
 import string 
 
-word = """ I stared at the crowd and told the biggest lie of my life.
+text = """ I stared at the crowd and told the biggest lie of my life.
 “James Waters was the best man I ever knew.” I didn’t know the guy. An hour ago, I didn’t even know his name. If his goofy face hadn’t been framed next to his casket, I wouldn’t even know what he looked like. I didn’t know he even existed. Well, he didn’t anymore, so that was a moot point.
 It was still uncertain if this was my biggest lie—it depended on whether or not it would fall apart. But it was certainly about to get bigger because people in the room were still waiting for me to go on.
 “When I first met him at Better Days a year ago, I thought he was an asshole.”
@@ -59,5 +59,34 @@ And then I gave him a two-finger salute—for being the best man I never knew.""
 
 table = str.maketrans("","",string.punctuation)
 
-x = word.translate(table)
-print(len(word))
+
+text = text.translate(table)
+print(text)
+
+text_list = text.split()
+print(text_list)
+
+
+longest_word = []
+length = 0
+for word in text_list:
+
+    clean = word.lower()
+    if not clean:
+        continue
+
+    if len(set(word)) == len(word):
+        if len(word)>  length:
+            longest_word = [word]
+            length = len(word)
+
+        elif len(word) == length:
+            longest_word.append(word)
+
+    
+
+
+print(longest_word,length)
+    
+
+
