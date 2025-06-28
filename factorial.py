@@ -11,5 +11,4 @@ def factorial_solution(n):
     return solution
 
 print(factorial_solution(7))
-print(7*6*5*4*3*2)
         
